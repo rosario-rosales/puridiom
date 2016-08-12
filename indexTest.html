@@ -8,10 +8,10 @@
 </head>
 <body>
 	<section>
-		<div class="toggleButton" onclick="click()">Show / Hide</div>
+		<div class="toggleButton">Show / Hide</div>
 		<div>
-			<img class="imgToogle toggleImages.show" src="images/image1.jpg"/>
-			<img class='imgToogle toggleImages.hide' src="images/image2.jpg"/>
+			<img class="imgToogle" src="images/image1.jpg"/>
+			<img class='imgToogle' src="images/image2.jpg"/>
 		</div>
 	</section>
 	<section>
@@ -27,14 +27,14 @@
 	</section>
 
 </body>
+<script type="text/javascript" src='jquery.min.js'></script>
 <script type="text/javascript">
+$(document).ready(function(){
 
-		function click()
-		{
-			imagen=$('.imgToogle');
-			$('.toggleImages.hide').hide();
-			$('.toggleImages.show').show();
-		}
+	$('.toggleButton').click(function(){
+		$('.imgToogle').toggle('hide');
+	});
+});
 
 </script>
 </html>
