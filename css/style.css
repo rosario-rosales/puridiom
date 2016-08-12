@@ -1,0 +1,97 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	background: #FAFAFA;
+}
+section {
+	padding: 80px 20px;
+	border-bottom: 2px solid #78909C;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	flex-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-align-content: center;
+	align-content: center;
+}
+.toggleButton{
+	background: #FFC107;
+	color: #FFFFFF;
+	padding: 10px;
+	text-transform: uppercase;
+	width: 150px;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.imgToogle {
+	width: 400px;
+	height: 200px;
+	margin: 10px;
+}
+.toggleImages.hide {
+	display: none; 
+}
+.toggleImages.show {
+	display: block; 
+}
+.imgWidth {
+	width: 300px;
+}
+.rotateImg {
+	-ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.menu {
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	background: #000000;
+	padding: 0 10px;
+}
+.menu li {
+	list-style: none;
+	padding: 8px 10px;
+	color: #FFFFFF;
+	transition: 0.3s;
+	cursor: pointer;
+	font-size: 18px;
+}
+.menu li.hoverAnimationEnlarge:hover {
+	-ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.menu li.hoverAnimationSkew:hover {
+	-ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+	transform: skewX(20deg);
+}
+.menu li.hoverAnimationColor:hover {
+	color: #0373a9;
+	font-weight: bold;
+}
+.menu li.hoverAnimationMinimize:hover {
+	-ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+	transform: scale(0.5);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PuridiomPe Quiz</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<section>
+		<div class="toggleButton" onclick="click()">Show / Hide</div>
+		<div>
+			<img class="imgToogle toggleImages.show" src="images/image1.jpg"/>
+			<img class='imgToogle toggleImages.hide' src="images/image2.jpg"/>
+		</div>
+	</section>
+	<section>
+		<img class='imgWidth rotateImg' src="images/image3.jpg"/>
+	</section>
+	<section>
+		<ul class="menu">
+			<li class="hoverAnimationEnlarge">Home</li>
+			<li class="hoverAnimationSkew">About</li>
+			<li class="hoverAnimationColor">Help</li>
+			<li class="hoverAnimationMinimize">Contact</li>
+		</ul>
+	</section>
+
+</body>
+<script type="text/javascript">
+
+		function click()
+		{
+			imagen=$('.imgToogle');
+			$('.toggleImages.hide').hide();
+			$('.toggleImages.show').show();
+		}
+
+</script>
+</html>
